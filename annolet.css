@@ -1,0 +1,27 @@
+body{
+	margin: 0;
+}
+
+#switchcss-container {
+  overflow: hidden;
+  background-color: #F47118;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#theme_1, #theme_2, #theme_3,
+#google_translate_element, #lang_translate,
+#lang, #textarea, #phonetic, #update, #save-edits,
+#highlight{
+  float: left;
+  display: block;
+  margin: 0 auto;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background: #000000;
+}
+
