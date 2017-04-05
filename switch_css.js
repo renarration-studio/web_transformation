@@ -3,9 +3,9 @@
 	var i= 0;
 	var style_sheets = 3; 
 	var link_rel =['alternate stylesheet', 'alternate stylesheet', 'alternate stylesheet'] 
-	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/css/switch1.css',
-	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/css/switch2.css',
-	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/css/switch3.css'];
+	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/b484de11c0a4c2c0b3b8044adad225cfe6273a4d/css/switch1.css',
+	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/b484de11c0a4c2c0b3b8044adad225cfe6273a4d/css/switch2.css',
+	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/b484de11c0a4c2c0b3b8044adad225cfe6273a4d/css/switch3.css'];
 	var link_title =['switch1', 'switch2', 'switch3'];
 
 	for(i=0; i<style_sheets; i++){
@@ -25,7 +25,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/css/main.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/b484de11c0a4c2c0b3b8044adad225cfe6273a4d/css/main.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(linktag);
     // appending a div to body of webpage
     var body = document.getElementsByTagName('body')[0];
