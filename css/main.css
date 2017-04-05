@@ -23,8 +23,7 @@ body{
 #google_translate_element, #lang_translate,
 #lang, #textarea, #phonetic, #update, #save-edits,
 #highlight{
-  margin: 0 auto;
-  display: block;
+  float:left; 
   color: white;
   text-align: center;
   text-decoration: none;
