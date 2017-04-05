@@ -3,7 +3,7 @@
 	var i= 0;
 	var style_sheets = 3; 
 	var link_rel =['alternate stylesheet', 'alternate stylesheet', 'alternate stylesheet'] 
-	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/b484de11c0a4c2c0b3b8044adad225cfe6273a4d/css/switch1.css',
+	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/36f3e458d1bf809a8772c8a9e931ae2dc350654d/css/switch1.css',
 	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/b484de11c0a4c2c0b3b8044adad225cfe6273a4d/css/switch2.css',
 	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/b484de11c0a4c2c0b3b8044adad225cfe6273a4d/css/switch3.css'];
 	var link_title =['switch1', 'switch2', 'switch3'];
