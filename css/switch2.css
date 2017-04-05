@@ -3,14 +3,4 @@
 	background: #C98F8F !important;
 }
 
-/**#theme_1 {
-    color: inherit;
-	background: inherit;
-}*/
 
-/*html:not(#switch-container)*/
-
-/**:not(#switch-container){
-  	color: black !important;
-  	background: #C98F8F !important;
-}*/

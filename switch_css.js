@@ -51,55 +51,6 @@
 		document.getElementById('switchcss-container').appendChild(button_tag);
 	}
 }());
-
-(function switch_textcolor(){
-    //appending a CSS stylesheets to head of webpage
-	var i= 0;
-	var style_sheets = 2; 
-	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/58a7655f41f2982943bf94102dd53e733b6ebbd4/colorpanel-master/dist/jquery.colorpanel.css',
-	'skins/default.css'];
-
-	for(i=0; i<style_sheets; i++){
-	    var linktag = document.createElement('link');
-	    linktag.rel  = 'stylesheet';
-	    linktag.type = 'text/css';
-	    linktag.href = css_themes[i];
-	    linktag[1].id = 'cpswitch';
-	    head  = document.getElementsByTagName('head')[0];
-	    head.appendChild(linktag);
-	}
-
-	//appending a div to body of webpage
-    var body = document.getElementsByTagName('body')[0];
-    var container = document.createElement('div');
-    container.id = 'colorPanel';
-    container.class = 'colorPanel';
-    body.appendChild(container);
-    document.getElementById('colorpanel').innerHTML= "<a id='cpToggle' href='#'>"+"</a>"+
-    "<ul>"+"</ul>";
-
-    //Include script on your footer below jQuery
-    var scripttag = document.createElement('script');
-    scripttag.type = "text/javascript";
-    //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    scripttag.src = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/58a7655f41f2982943bf94102dd53e733b6ebbd4/colorpanel-master/dist/jquery.colorpanel.js"; //random version number removed bcoz some browser take it as text file and not as CSS.
-    document.getElementsByTagName('body')[0].appendChild(scripttag);
-
-
-    //call the plugin code on your document ready event
-    $('#colorPanel').ColorPanel({
-            styleSheet: '#cpswitch'
-            , animateContainer: '#wrapper'
-            , colors: {
-                '#4B77BE': 'skins/default.css'
-                , '#16a085': 'skins/seagreen.css'
-               
-            , }
-    });
-
-}());
-
-
 (function add_clickevents(){
 	document.getElementById('theme_1').addEventListener('click', function() {
 		switch_style('switch1')
