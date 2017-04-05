@@ -32,6 +32,11 @@
     var container = document.createElement('div');
     container.id = 'switchcss-container';
     body.appendChild(container);
+    //appending h1 tag into the div inner HTML
+    var header = document.createElement('h2');
+    header.id = 'css-header';
+    var text = document.createTextNode("Switch Themes");
+    body.appendChild(header);
     //appending buttons into the div inner HTML
 	var i= 0;
 	var buttons = 3;

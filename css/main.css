@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+
+#switchcss-container {
+  overflow: hidden;
+  background-color: orange;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 3%
+}
+
+#header{
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+
+#theme_1, #theme_2, #theme_3,
+#google_translate_element, #lang_translate,
+#lang, #textarea, #phonetic, #update, #save-edits,
+#highlight{
+  float: left;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: black;
+}
+
