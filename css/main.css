@@ -8,7 +8,7 @@ body{
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 3%
+  padding: 1%
 }
 
 #themes-header{
@@ -21,9 +21,8 @@ body{
 #google_translate_element, #lang_translate,
 #lang, #textarea, #phonetic, #update, #save-edits,
 #highlight{
-  float: left;
-  display: block;
   margin: 0 auto;
+  display: block;
   color: white;
   text-align: center;
   text-decoration: none;
