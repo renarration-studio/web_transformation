@@ -25,17 +25,18 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/main.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(linktag);
     // appending a div to body of webpage
     var body = document.getElementsByTagName('body')[0];
     var container = document.createElement('div');
     container.id = 'switchcss-container';
     body.appendChild(container);
-    //appending h1 tag into the div inner HTML
+    //appending h2 tag into the div inner HTML
     var header = document.createElement('h2');
-    header.id = 'css-header';
     var text = document.createTextNode("Switch Themes");
+    header.id = 'themes-header';
+    header.appendChild(text);
     body.appendChild(header);
     //appending buttons into the div inner HTML
 	var i= 0;
