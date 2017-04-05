@@ -56,7 +56,8 @@
     //appending a CSS stylesheets to head of webpage
 	var i= 0;
 	var style_sheets = 2; 
-	var css_themes =['dist/jquery.colorpanel.css', 'skins/default.css'];
+	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/colorpanel-master/dist/jquery.colorpanel.css',
+	'skins/default.css'];
 
 	for(i=0; i<style_sheets; i++){
 	    var linktag = document.createElement('link');
@@ -81,7 +82,7 @@
     var scripttag = document.createElement('script');
     scripttag.type = "text/javascript";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    scripttag.src = "dist/jquery.colorpanel.js"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    scripttag.src = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/colorpanel-master/dist/jquery.colorpanel.js"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('body')[0].appendChild(scripttag);
 
 
