@@ -6,7 +6,12 @@ html
 	-ms-filter: invert(100%); 
 }
 
-html:not(#switch-container)
+div#switchcss-container {
+    -webkit-filter: inherit;
+	-moz-filter: inherit;
+	-o-filter: inherit;
+	-ms-filter: inherit;
+}
 
 
 
