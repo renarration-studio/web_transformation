@@ -3,9 +3,9 @@
 	var i= 0;
 	var style_sheets = 3; 
 	var link_rel =['alternate stylesheet', 'alternate stylesheet', 'alternate stylesheet'] 
-	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/switch1.css',
-	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/switch2.css',
-	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/switch3.css'];
+	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/css/switch1.css',
+	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/css/switch2.css',
+	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/master/css/switch3.css'];
 	var link_title =['switch1', 'switch2', 'switch3'];
 
 	for(i=0; i<style_sheets; i++){
