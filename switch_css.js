@@ -1,5 +1,5 @@
 (function alternate_stylesheets(){
-        //appending a CSS alternate stylesheets to head of webpage
+    //appending a CSS alternate stylesheets to head of webpage
 	var i= 0;
 	var style_sheets = 3; 
 	var link_rel =['alternate stylesheet', 'alternate stylesheet', 'alternate stylesheet'] 

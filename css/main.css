@@ -9,6 +9,7 @@ body{
   bottom: 0;
   width: 100%;
   border-radius: 31px 31px 0px 0px;
+  z-index: 9999;
 }
 
 #themes-header{
