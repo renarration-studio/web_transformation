@@ -13,14 +13,10 @@ body{
 
 #themes-header{
     text-align:center;
-    color:orange;
+    color: white;
+    text-shadow: 2px -2px 19px #823ae4;
+    font-weight: bold;
     font-family: Georgia, serif;
-}
-
-#themes-header:hover{
-  color: white;
-  text-shadow: 2px -2px 19px #823ae4;
-  font-weight: bold;
 }
 
 #theme_1, #theme_2, #theme_3,
@@ -33,10 +29,5 @@ body{
   text-align: center;
   text-decoration: none;
   background:#000080;
-}
-
-button:hover{
-    background: white;
-    color: #000080;
 }
 
