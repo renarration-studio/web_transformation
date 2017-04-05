@@ -25,7 +25,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/c816e082babf4c1fd4dab485d4a139477dc0213a/css/main.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/5bf016933f1b6272aaf17b13f77168006c528584 /css/main.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(linktag);
     // appending a div to body of webpage
     var body = document.getElementsByTagName('body')[0];
