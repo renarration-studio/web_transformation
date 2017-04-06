@@ -75,7 +75,7 @@ function getlinks() {
     for (var i=0, max=all.length; i < max; i++) {
         var href_attribute = all[i].hasAttribute("href");
         var src_attribute = all[i].hasAttribute("src");
-        if(href_attribute == false || src_attribute == false){
+        if(href_attribute == false && src_attribute == false){
             all[i].style.visibility = 'hidden';
         }
         else if(href_attribute == true || src_attribute == true){
