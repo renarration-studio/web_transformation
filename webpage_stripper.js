@@ -77,5 +77,8 @@ function getlinks() {
         if(href_attribute == false){
             all[i].style.visibility = 'hidden';
         }
+        else if(href_attribute == true){
+            all[i].style.visibility = 'visible';
+        }
     }
 }
