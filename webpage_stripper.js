@@ -112,7 +112,7 @@ function showImages() {
 
 function add_clickevents(){
     document.getElementById('show-text').addEventListener('click', function() {
-        saveText()
+        showText()
     }, false);
     document.getElementById('show-images').addEventListener('click', function() {
         showImages()
