@@ -21,7 +21,8 @@
     document.getElementById('pagestripper-container').appendChild(header);
 
     createButton()
-    showLinks()
+    // showLinks()
+    getlinks()
 }());
 
 
@@ -40,20 +41,27 @@ function createButton(){
     }
 }
 
-function showLinks() {
-    url="http://www.vlabs.ac.in"
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "//localhost:5000/show-links" ,true);
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-    xhr.send(JSON.stringify({"url":url}));
-    //xhr.send(data);
-    xhr.onreadystatechange = function() {
-        if (this.readyState==4 && this.status==200) {
-            alert("hello");
-            var res = this.responseText;
-            alert(res);
-            document.body.innerHTML = res;
-        }
+// function showLinks() {
+//     url="http://www.vlabs.ac.in"
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("POST", "//localhost:5000/show-links" ,true);
+//     xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+//     xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+//     xhr.send(JSON.stringify({"url":url}));
+//     //xhr.send(data);
+//     xhr.onreadystatechange = function() {
+//         if (this.readyState==4 && this.status==200) {
+//             alert("hello");
+//             var res = this.responseText;
+//             alert(res);
+//             document.body.innerHTML = res;
+//         }
+//     }
+// }
+
+function getlinks() {
+    var links = document.getElementsByTagName('a');
+    for(var i = 0; i< links.length; i++){
+        document.body.innerHTML = links[i].href;
     }
 }
