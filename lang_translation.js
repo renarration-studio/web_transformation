@@ -1,4 +1,4 @@
-(function switchcss_container(){
+(function langTrans_container(){
     //appending a CSS stylesheet to head of webpage
     var link = document.createElement('link');
     // using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
@@ -6,17 +6,20 @@
     link.type = "text/css";
     link.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/2b3df055c68d7bb024d13929aad43ea67ff5f8a9/css/main.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(link);
+    
+    // appending a div to body of webpage
+    var body = document.getElementsByTagName('body')[0];
+    var trans_container = document.createElement('div');
+    trans_container.id = 'langTrans-container';
+    body.appendChild(trans_container);
+
     //appending h2 tag into the div inner HTML
     var header = document.createElement('h2');
     var text = document.createTextNode("Language Translation");
-    header.id = 'themes-header';
+    header.id = 'trans-header';
     header.appendChild(text);
-    document.getElementById('switchcss-container').appendChild(header);
-    // appending a div to body of webpage
-    var body = document.getElementsByTagName('body')[0];
-    var switchcss_container = document.createElement('div');
-    switchcss_container.id = 'switchcss-container';
-    body.appendChild(switchcss_container);
+    document.getElementById('langTrans-container').appendChild(header);
+
     create_div()
     Translate_button()
     select_list()
@@ -38,7 +41,7 @@ function googleTranslateElementInit() {
 function create_div(){
      div = document.createElement('div');
      div.id = 'google_translate_element';
-     document.getElementById('switchcss-container').appendChild(div);
+     document.getElementById('langTrans-container').appendChild(div);
 }
 
 function Translate_button(){
@@ -46,7 +49,7 @@ function Translate_button(){
      var text = document.createTextNode("Translate");
      button.id = 'lang_translate';
      button.appendChild(text);
-     document.getElementById('switchcss-container').appendChild(button);
+     document.getElementById('langTrans-container').appendChild(button);
 }
 
 function select_list(){
@@ -57,7 +60,7 @@ function select_list(){
       var selectList = document.createElement("select");
       selectList.setAttribute("id", "lang");
       selectList.setAttribute("name", "to");
-      document.getElementById('switchcss-container').appendChild(selectList);
+      document.getElementById('langTrans-container').appendChild(selectList);
       //Create and append the options
       for (var i = 0; i < array.length; i++) {
           var option = document.createElement("option");
@@ -72,7 +75,7 @@ function create_textArea() {
     output.id="textarea";
     var t = document.createTextNode("");
     output.appendChild(t);
-    document.getElementById('switchcss-container').appendChild(output);
+    document.getElementById('langTrans-container').appendChild(output);
 }
 
 (function languageTrans_API(){
