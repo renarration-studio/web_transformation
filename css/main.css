@@ -26,7 +26,8 @@ body{
 #theme_1, #theme_2, #theme_3,
 #google_translate_element, #lang_translate,
 #lang, #textarea, #phonetic, #update, #save-edits,
-#highlight, #increase-font, #decrease-font{
+#highlight, #increase-font, #decrease-font,
+#show-text, #show-images, #show-links{
   float:left; 
   color: white;
   text-align: center;
