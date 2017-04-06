@@ -21,8 +21,7 @@
     document.getElementById('pagestripper-container').appendChild(header);
 
     createButton()
-    // showLinks()
-    getlinks()
+
 }());
 
 
@@ -41,36 +40,9 @@ function createButton(){
     }
 }
 
-// function showLinks() {
-//     url="http://www.vlabs.ac.in"
-//     var xhr = new XMLHttpRequest();
-//     xhr.open("POST", "//localhost:5000/show-links" ,true);
-//     xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-//     xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-//     xhr.send(JSON.stringify({"url":url}));
-//     //xhr.send(data);
-//     xhr.onreadystatechange = function() {
-//         if (this.readyState==4 && this.status==200) {
-//             alert("hello");
-//             var res = this.responseText;
-//             alert(res);
-//             document.body.innerHTML = res;
-//         }
-//     }
-// }
-
-function getlinks() {
-    // var links = document.getElementsByTagName('a');
-    // for(var i = 0; i< links.length; i++){
-    //     document.body.innerHTML = links[i].href;
-    // }
-
-    // var arr = [], l = document.links;
-    // for(var i=0; i<l.length; i++) {
-    //   arr.push(l[i].href);
-    // }
-    // document.body.innerHTML = l[i].href;
-
+// Function loops through all the elements in a web page and displays elements which has links
+// and rest of the content is made hidden.  
+function showLinks() {
     var all = document.getElementsByTagName("*");
     for (var i=0, max=all.length; i < max; i++) {
         var href_attribute = all[i].hasAttribute("href");
@@ -82,4 +54,16 @@ function getlinks() {
             all[i].style.visibility = 'visible';
         }
     }
+}
+
+function add_clickevents(){
+    document.getElementById('show-links').addEventListener('click', function() {
+        showLinks()
+    }, false);
+    // document.getElementById('show-images').addEventListener('click', function() {
+    //     saveImages()
+    // }, false);
+    // document.getElementById('show-text').addEventListener('click', function() {
+    //     saveText()
+    // }, false);
 }
