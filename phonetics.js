@@ -1,36 +1,45 @@
-(function switchcss_container(){
+(function phonetics_container(){
   //appending a CSS stylesheet to head of webpage
     var link = document.createElement('link');
-    // using rawgit.com MaxCDN.. files directly linked to git repo 'annoletjs/master'
+    // using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
     link.rel = "stylesheet";
     link.type = "text/css";
-    link.href = "https://rawgit.com/sadhanareddy/css-changer-tool/master/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    link.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/613b9ca1/css/main.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(link);
 
     //appending a div to body of webpage
     var body = document.getElementsByTagName('body')[0];
-    var switchcss_container = document.createElement('div');
-    switchcss_container.id = 'switchcss-container';
-    body.appendChild(switchcss_container);
+    var phonetics_container = document.createElement('div');
+    phonetics_container.id = 'phonetics-container';
+    body.appendChild(phonetics_container);
+
+    //appending h2 tag into the div inner HTML
+    var header = document.createElement('h2');
+    var text = document.createTextNode("Phonetic Translation");
+    header.id = 'phonetics-header';
+    header.appendChild(text);
+    document.getElementById('phonetics-container').appendChild(header);
+
     Translate_button()
     create_textArea()
-  
 }());
+
 function Translate_button(){
     button = document.createElement("BUTTON");
     var text = document.createTextNode("Get Phonetic");
     button.id = 'phonetic';
     button.appendChild(text);
-    document.getElementById('switchcss-container').appendChild(button);
+    document.getElementById('phonetics-container').appendChild(button);
 }
 function create_textArea() {
     var output = document.createElement("TEXTAREA");
     output.id="textarea";
-    var t = document.createTextNode("");
-    output.appendChild(t);
-    document.getElementById('switchcss-container').appendChild(output);
+    var text = document.createTextNode("");
+    output.appendChild(text);
+    document.getElementById('phonetics-container').appendChild(output);
 }
-function phoneticsTrans_API(){
+
+(function phoneticsTrans_API(){
 // var url = "http://www.phonemicchart.com/transcribe/";
 var url = "//localhost:5000/phonetic-trans"
 document.querySelector('#phonetic').addEventListener('click', function() {
@@ -55,4 +64,4 @@ document.querySelector('#phonetic').addEventListener('click', function() {
         }
     }
 }, false);
-}
+}());

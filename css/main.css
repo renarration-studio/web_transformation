@@ -2,7 +2,8 @@ body{
     margin: 0;
 }
 
-#switchcss-container, #langTrans-container{
+#switchcss-container, #langTrans-container
+#phonetics-container{
   overflow: hidden;
   background-color: black;
   position: fixed;
@@ -12,7 +13,7 @@ body{
   z-index: 9999;
 }
 
-#themes-header, #trans-header{
+#themes-header, #trans-header, #phonetics-header{
     text-align:center;
     color: white;
     text-shadow: 2px -2px 19px #823ae4;
