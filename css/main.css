@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-#switchcss-container, #langTrans-container
+#switchcss-container, #langTrans-container,
 #phonetics-container{
   overflow: hidden;
   background-color: black;
