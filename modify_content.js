@@ -21,7 +21,7 @@
     document.getElementById('content-container').appendChild(header);
 
     disableAllLinks()
-    setAtrr()
+    setAttr()
     create_div()
     createButton()
     changeFontsize()
