@@ -3,7 +3,8 @@ body{
 }
 
 #switchcss-container, #langTrans-container,
-#phonetics-container, #content-container{
+#phonetics-container, #content-container,
+#pagestripper-container{
   overflow: hidden;
   background-color: black;
   position: fixed;
@@ -14,7 +15,7 @@ body{
 }
 
 #themes-header, #trans-header, #phonetics-header,
-#content-header{
+#content-header, #pagestripper-header{
     text-align:center;
     color: white;
     text-shadow: 2px -2px 19px #823ae4;
