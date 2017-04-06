@@ -21,6 +21,7 @@
     document.getElementById('pagestripper-container').appendChild(header);
 
     createButton()
+    add_clickevents()
 
 }());
 
