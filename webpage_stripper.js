@@ -41,22 +41,20 @@ function createButton(){
     }
 }
 
-// Function loops through all the elements in a web page and displays image elements 
+// Function loops through all the elements in a web page and displays elements which has text content
 // and rest of the content is made hidden.  
-function showImages() {
+function showText() {
     var all = document.getElementsByTagName("*");
-    alert(all);
     for (var i=0, max=all.length; i < max; i++) {
-        var src_attribute = all[i].hasAttribute("src");
-        if(src_attribute == false){
-            all[i].style.visibility = 'hidden';
-        }
-        else if(src_attribute == true){
+        if(all[i].innerHTML){
             all[i].style.visibility = 'visible';
+        }
+        else{
+            all[i].style.visibility = 'hidden';
         }
     }
 
-    //get all the menu bar id
+    //get the menu bar id 
     document.getElementById('pagestripper-container').style.visibility='visible';
     var children = document.getElementById('pagestripper-container').children;
     //This will make all children elements of div visible. 
@@ -80,7 +78,30 @@ function showLinks() {
         }
     }
 
-    //get all the menu bar id
+    //get the menu bar id
+    document.getElementById('pagestripper-container').style.visibility='visible';
+    var children = document.getElementById('pagestripper-container').children;
+    //This will make all children elements of div visible. 
+    for(var i = 0; i < children.length; i++){
+        children[i].style.visibility = 'visible';
+    }
+}
+
+// Function loops through all the elements in a web page and displays image elements 
+// and rest of the content is made hidden.  
+function showImages() {
+    var all = document.getElementsByTagName("*");
+    for (var i=0, max=all.length; i < max; i++) {
+        var src_attribute = all[i].hasAttribute("src");
+        if(src_attribute == false){
+            all[i].style.visibility = 'hidden';
+        }
+        else if(src_attribute == true){
+            all[i].style.visibility = 'visible';
+        }
+    }
+
+    //get the menu bar id
     document.getElementById('pagestripper-container').style.visibility='visible';
     var children = document.getElementById('pagestripper-container').children;
     //This will make all children elements of div visible. 
@@ -90,13 +111,13 @@ function showLinks() {
 }
 
 function add_clickevents(){
-    document.getElementById('show-links').addEventListener('click', function() {
-        showLinks()
+    document.getElementById('show-text').addEventListener('click', function() {
+        saveText()
     }, false);
     document.getElementById('show-images').addEventListener('click', function() {
         showImages()
     }, false);
-    // document.getElementById('show-text').addEventListener('click', function() {
-    //     saveText()
-    // }, false);
+    document.getElementById('show-links').addEventListener('click', function() {
+        showLinks()
+    }, false);
 }
