@@ -60,8 +60,14 @@ function createButton(){
 // }
 
 function getlinks() {
-    var links = document.getElementsByTagName('a');
-    for(var i = 0; i< links.length; i++){
-        document.body.innerHTML = links[i].href;
+    // var links = document.getElementsByTagName('a');
+    // for(var i = 0; i< links.length; i++){
+    //     document.body.innerHTML = links[i].href;
+    // }
+
+    var arr = [], l = document.links;
+    for(var i=0; i<l.length; i++) {
+      arr.push(l[i].href);
     }
+    document.body.innerHTML = arr;
 }
