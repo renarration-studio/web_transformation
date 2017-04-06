@@ -57,11 +57,11 @@ function showLinks() {
     }
 
     //get all the menu bar id
-    var container = document.getElementById('pagestripper-container');
-    container.style.visibility='visible';
-    //This will make all matching elements 
-    for(var i = 0; i < container.length; i++){
-        container[i].style.visibility = 'visible';
+    document.getElementById('pagestripper-container').style.visibility='visible';
+    var children = document.getElementById('pagestripper-container').children;
+    //This will make all children elements of div visible. 
+    for(var i = 0; i < children.length; i++){
+        children[i].style.visibility = 'visible';
     }
 }
 
