@@ -55,7 +55,14 @@ function showLinks() {
             all[i].style.visibility = 'visible';
         }
     }
-    document.getElementById('pagestripper-container').style.visibility = 'visible';
+
+    //get all the menu bar id
+    var container = document.getElementById('pagestripper-container');
+    container.style.visibility='visible';
+    //This will make all matching elements 
+    for(var i = 0; i < container.length; i++){
+        container[i].style.visibility = 'visible';
+    }
 }
 
 function add_clickevents(){
