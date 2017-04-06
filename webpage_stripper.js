@@ -41,6 +41,30 @@ function createButton(){
     }
 }
 
+// Function loops through all the elements in a web page and displays image elements 
+// and rest of the content is made hidden.  
+function showImages() {
+    var all = document.getElementsByTagName("*");
+    alert(all);
+    for (var i=0, max=all.length; i < max; i++) {
+        var src_attribute = all[i].hasAttribute("src");
+        if(src_attribute == false){
+            all[i].style.visibility = 'hidden';
+        }
+        else if(src_attribute == true){
+            all[i].style.visibility = 'visible';
+        }
+    }
+
+    //get all the menu bar id
+    document.getElementById('pagestripper-container').style.visibility='visible';
+    var children = document.getElementById('pagestripper-container').children;
+    //This will make all children elements of div visible. 
+    for(var i = 0; i < children.length; i++){
+        children[i].style.visibility = 'visible';
+    }
+}
+
 // Function loops through all the elements in a web page and displays elements which has links
 // and rest of the content is made hidden.  
 function showLinks() {
@@ -69,9 +93,9 @@ function add_clickevents(){
     document.getElementById('show-links').addEventListener('click', function() {
         showLinks()
     }, false);
-    // document.getElementById('show-images').addEventListener('click', function() {
-    //     saveImages()
-    // }, false);
+    document.getElementById('show-images').addEventListener('click', function() {
+        showImages()
+    }, false);
     // document.getElementById('show-text').addEventListener('click', function() {
     //     saveText()
     // }, false);
