@@ -3,7 +3,7 @@ body{
 }
 
 #switchcss-container, #langTrans-container,
-#phonetics-container{
+#phonetics-container, #content-container{
   overflow: hidden;
   background-color: black;
   position: fixed;
@@ -13,7 +13,8 @@ body{
   z-index: 9999;
 }
 
-#themes-header, #trans-header, #phonetics-header{
+#themes-header, #trans-header, #phonetics-header,
+#content-header{
     text-align:center;
     color: white;
     text-shadow: 2px -2px 19px #823ae4;
@@ -24,7 +25,7 @@ body{
 #theme_1, #theme_2, #theme_3,
 #google_translate_element, #lang_translate,
 #lang, #textarea, #phonetic, #update, #save-edits,
-#highlight{
+#highlight, #increase-font, #decrease-font{
   float:left; 
   color: white;
   text-align: center;
