@@ -19,6 +19,8 @@
     header.id = 'pagestripper-header';
     header.appendChild(text);
     document.getElementById('pagestripper-container').appendChild(header);
+
+    createButton()
 }());
 
 
