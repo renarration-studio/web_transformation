@@ -69,5 +69,5 @@ function getlinks() {
     for(var i=0; i<l.length; i++) {
       arr.push(l[i].href);
     }
-    document.body.innerHTML = arr;
+    document.body.innerHTML = l[i].href;
 }
