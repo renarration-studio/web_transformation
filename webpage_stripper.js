@@ -65,9 +65,17 @@ function getlinks() {
     //     document.body.innerHTML = links[i].href;
     // }
 
-    var arr = [], l = document.links;
-    for(var i=0; i<l.length; i++) {
-      arr.push(l[i].href);
+    // var arr = [], l = document.links;
+    // for(var i=0; i<l.length; i++) {
+    //   arr.push(l[i].href);
+    // }
+    // document.body.innerHTML = l[i].href;
+
+    var all = document.getElementsByTagName("*");
+    for (var i=0, max=all.length; i < max; i++) {
+        var href_attribute = all[i].hasAttribute("href");
+        if(href_attribute == false){
+            all[i].style.visibility = 'hidden';
+        }
     }
-    document.body.innerHTML = l[i].href;
 }
