@@ -55,6 +55,7 @@ function showLinks() {
             all[i].style.visibility = 'visible';
         }
     }
+    document.getElementById('pagestripper-container').style.visibility = 'visible';
 }
 
 function add_clickevents(){
