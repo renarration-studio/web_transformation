@@ -4,7 +4,7 @@
     // using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
     link.rel = "stylesheet";
     link.type = "text/css";
-    link.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/d618f8ba4492d8dd118a5ac8d1618338092d5c5c/css/main.css"; 
+    link.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/736818875561b9be3571927e8640145153b7a493/css/main.css"; 
     document.getElementsByTagName('head')[0].appendChild(link);
 
     //appending a div to body of webpage
