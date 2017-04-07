@@ -9,7 +9,7 @@
                 image.parentNode.replaceChild(textReplacement, image);
             }
             else{
-                image.style.backgroundColor = "red";
+                images[i].style.backgroundColor = "red";
                 //image.setAttribute('alt', 'alt text of image not provided');
             }
 
