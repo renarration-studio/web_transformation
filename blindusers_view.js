@@ -1,5 +1,4 @@
-(function Convert()
-{
+(function Convert(){
     images = window.document.getElementsByTagName('img');
     var num_images = images.length;
     for (var i = 0; i < num_images; i++)
@@ -11,7 +10,7 @@
             }
             else{
                 image.style.backgroundColor = "red";
-                image.setAttribute('alt', 'alt text of image not provided');
+                //image.setAttribute('alt', 'alt text of image not provided');
             }
 
     }
