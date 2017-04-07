@@ -5,7 +5,14 @@
     for (var i = 0; i < num_images; i++)
     {
             var image = images[0];
-            textReplacement = document.createTextNode(image.getAttribute('alt'));
-            image.parentNode.replaceChild(textReplacement, image);
+            if(image.hasAttribute('alt')){
+                textReplacement = document.createTextNode(image.getAttribute('alt'));
+                image.parentNode.replaceChild(textReplacement, image);
+            }
+            else{
+                image.style.backgroundColor = "red";
+                image.setAttribute('alt', 'alt text of image not provided');
+            }
+
     }
 }());
