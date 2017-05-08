@@ -2,7 +2,7 @@
     //appending a CSS alternate stylesheets to head element of a webpage.
 	var i= 0;
 	var style_sheets = 3; 
-	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/commit/0495687383e4e80a83fe81f3f5ead01c6d0c010f',
+	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/commit/1d3180ca7519c80381ad503511e6c1cd2d08a532',
 	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/4d963f14/css/switch2.css',
 	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/4d963f14/css/switch3.css'];
 	var link_title =['switch1', 'switch2', 'switch3'];
