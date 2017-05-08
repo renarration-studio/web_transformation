@@ -52,13 +52,13 @@
 }());
 (function addClickevents(){
 	document.getElementById('theme_1').addEventListener('click', function() {
-		switch_style('switch1')
+		switchStyle('switch1')
 	}, false);
 	document.getElementById('theme_2').addEventListener('click', function() {
-		switch_style('switch2')
+		switchStyle('switch2')
 	}, false);
 	document.getElementById('theme_3').addEventListener('click', function() {
-		switch_style('switch3')
+		switchStyle('switch3')
 	}, false);
 }());
 function switchStyle(css_title)
