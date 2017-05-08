@@ -1,20 +1,19 @@
 body
 {
-	/*-webkit-filter: invert(100%);
+	-webkit-filter: invert(100%);
 	-moz-filter: invert(100%);
 	-o-filter: invert(100%);
-	-ms-filter: invert(100%);*/
-	background: yellow; 
+	-ms-filter: invert(100%);
 }
 
-/*#annolet-container, #annolet-header, .annolet-elements
+#annolet-container, #annolet-header, .annolet-elements
 {
 	-webkit-filter: inherit;
 	-moz-filter: inherit;
 	-o-filter: inherit;
 	-ms-filter: inherit; 
 }
-*/
+
 
 
 

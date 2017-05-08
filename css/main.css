@@ -35,8 +35,8 @@ body{
 
 #annolet-header{
     text-align:center;
-    color: red !important;
-    text-shadow: 2px -2px 19px #823ae4;
+    color: white !important;
+    text-shadow: 2px -2px 19px #823ae4 !important;
     font-weight: bold;
     font-family: Georgia, serif;
 }
