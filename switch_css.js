@@ -35,7 +35,7 @@
     var text = document.createTextNode("Switch Themes");
     header.id = 'annolet-header';
     header.appendChild(text);
-    body.appendChild(header);
+    container.appendChild(header);
     //appending buttons into the div inner HTML
 	var i= 0;
 	var buttons = 3;
