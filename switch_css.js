@@ -2,9 +2,9 @@
     //appending a CSS alternate stylesheets to head element of a webpage.
 	var i= 0;
 	var style_sheets = 3; 
-	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/42c81292/css/switch1.css',
-	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/4d963f14/css/switch2.css',
-	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/4d963f14/css/switch3.css'];
+	var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/95f11312/css/switch1.css',
+	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/95f11312/css/switch2.css',
+	'https://cdn.rawgit.com/renarration-studio/webpage-transformation/95f11312/css/switch3.css'];
 	var link_title =['switch1', 'switch2', 'switch3'];
 
 	for(i=0; i<style_sheets; i++){
@@ -23,7 +23,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/f3c1b7a2/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/95f11312/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(linktag);
     //appending a div(annolet container) to body of a webpage
     var body = document.getElementsByTagName('body')[0];
