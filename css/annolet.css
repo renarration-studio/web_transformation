@@ -115,3 +115,7 @@ body{
   color: black !important;
   padding: 16px;
 }
+
+#disable_btn:hover{
+    background-color: grey !important;
+}
