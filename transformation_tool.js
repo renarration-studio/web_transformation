@@ -1,7 +1,7 @@
 (function annoletContainer(){
     //appending a div(annolet container) into body element of a webpage.
     var body = document.getElementsByTagName('body')[0];
-    var container = document.createElement('div');
+    container = document.createElement('div');
     container.id = 'annolet-container';
     body.appendChild(container);
     //appending h2 tag into the div inner HTML
@@ -16,7 +16,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation/77492ebc/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/cff0cf25/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(linktag);
 }());
 
@@ -29,7 +29,7 @@
 
     var button_tag = document.createElement('BUTTON');
     var text = document.createTextNode('SwitchThemes');
-    button_tag.setAttribute('class', 'dropbtn');
+    button_tag.className = 'dropbtn';
     button_tag.appendChild(text);
     themes_div.appendChild(button_tag);
 
@@ -49,16 +49,13 @@
         dropdown_div.appendChild(list_elements_tag);
     }
 
-//   <div class="dropdown">
-//   <button class="dropbtn">Dropdown</button>
-//   <div class="dropdown-content">
-//     <a href="#">Link 1</a>
-//     <a href="#">Link 2</a>
-//     <a href="#">Link 3</a>
-//   </div>
-// </div>
-
-}
+    //Creates disable css button
+    var disable_btn = document.createElement('BUTTON');
+    disable_btn.id="disable_btn";
+    var disablebtn_text = document.createTextNode('DisableCss');
+    disable_btn.appendChild(disablebtn_text);
+    container.appendChild(disable_btn);
+}());
 
 // var now = new Date();
 // if(now.getHours() < 12)

@@ -65,8 +65,8 @@ body{
 
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: orange;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -107,5 +107,11 @@ body{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: grey;
+}
+
+#disable_btn{
+  background-color: orange !important;
+  color: black !important;
+  padding: 16px;
 }
