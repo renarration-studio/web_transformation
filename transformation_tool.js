@@ -26,13 +26,13 @@
 
     var button_tag = document.createElement("BUTTON");
     var text = document.createTextNode(Switch Themes);
-    var span = document.createElement("span");
-    span.className = "caret";
+    // var span = document.createElement("span");
+    // span.className = "caret";
     button_tag.className = "btn btn-primary dropdown-toggle";
     button.type = "button";
     button.setAttribute('data-toggle', 'dropdown');
     button_tag.appendChild(text);
-    button_tag.appendChild(span);
+    // button_tag.appendChild(span);
     themes_div.appendChild(button_tag);
 
     // var ul_list_tag = document.createElement('ul');
