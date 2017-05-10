@@ -27,8 +27,8 @@
     var button_tag = document.createElement("BUTTON");
     var text = document.createTextNode(Switch Themes);
     var span = document.createElement("span");
-    span.class = "caret";
-    button_tag.class = "btn btn-primary dropdown-toggle";
+    span.className = "caret";
+    button_tag.className = "btn btn-primary dropdown-toggle";
     button.type = "button";
     button.setAttribute('data-toggle', 'dropdown');
     button_tag.appendChild(text);
