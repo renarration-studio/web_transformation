@@ -21,7 +21,7 @@
 
     // Creates dropdown box and appended into the annolet container div for switching the themes of a webpage. 
     var themes_div = document.createElement('div');
-    themes_div.class = 'dropdown';
+    themes_div.className = 'dropdown';
     container.appendChild(themes_div);
 
     // var button_tag = document.createElement("BUTTON");
