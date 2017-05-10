@@ -24,31 +24,31 @@
     themes_div.class = 'dropdown';
     container.appendChild(themes_div);
 
-    var button_tag = document.createElement("BUTTON");
-    var text = document.createTextNode(Switch Themes);
-    var span = document.createElement("span");
-    span.class = "caret";
-    button_tag.class = "btn btn-primary dropdown-toggle";
-    button.type = "button";
-    button.setAttribute('data-toggle', 'dropdown');
-    button_tag.appendChild(text);
-    button_tag.appendChild(span);
-    themes_div.appendChild(button_tag);
+    // var button_tag = document.createElement("BUTTON");
+    // var text = document.createTextNode(Switch Themes);
+    // var span = document.createElement("span");
+    // span.class = "caret";
+    // button_tag.class = "btn btn-primary dropdown-toggle";
+    // button.type = "button";
+    // button.setAttribute('data-toggle', 'dropdown');
+    // button_tag.appendChild(text);
+    // button_tag.appendChild(span);
+    // themes_div.appendChild(button_tag);
 
-    var ul_list_tag = document.createElement('ul');
-    ul_list_tag.class = 'dropdown-menu';
-    themes_div.appendChild(ul_list_tag);
-    var i= 0;
-    var list_elements = 3;
-    var text_node = ['Theme 1', 'Theme 2', 'Theme 3'];
-    var list_elements_id = ['theme-1', 'theme-2','theme-3'];
-    for(i=0; i<list_elements; i++){
-        var list_elements_tag = document.createElement("li");
-        var text = document.createTextNode(text_node[i]);
-        list_elements_tag.id = list_elements_id[i];
-        list_elements_tag.appendChild(text);
-        ul_list_tag.appendChild(list_elements_tag);
-    }
+    // var ul_list_tag = document.createElement('ul');
+    // ul_list_tag.class = 'dropdown-menu';
+    // themes_div.appendChild(ul_list_tag);
+    // var i= 0;
+    // var list_elements = 3;
+    // var text_node = ['Theme 1', 'Theme 2', 'Theme 3'];
+    // var list_elements_id = ['theme-1', 'theme-2','theme-3'];
+    // for(i=0; i<list_elements; i++){
+    //     var list_elements_tag = document.createElement("li");
+    //     var text = document.createTextNode(text_node[i]);
+    //     list_elements_tag.id = list_elements_id[i];
+    //     list_elements_tag.appendChild(text);
+    //     ul_list_tag.appendChild(list_elements_tag);
+    // }
     // //appending buttons into the div inner HTML
     // var i= 0;
     // var buttons = 3;
@@ -66,8 +66,8 @@
 
 
 
-var now = new Date();
-if(now.getHours() < 12)
-    document.write('Good Morning!');
-else
-    document.write('Good Afternoon!');
+// var now = new Date();
+// if(now.getHours() < 12)
+//     document.write('Good Morning!');
+// else
+//     document.write('Good Afternoon!');
