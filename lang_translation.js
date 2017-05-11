@@ -34,6 +34,14 @@
     document.getElementsByTagName('head')[0].appendChild(script);
 }());
 
+(function injectJs() {
+    //appending a script tag to head of webpage
+    var script = document.createElement('script');
+    script.type = "text/javascript";
+    script.src = "";
+    document.getElementsByTagName('head')[0].appendChild(script);
+}());
+
 function googleTranslateElementInit() {
    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
