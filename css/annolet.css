@@ -53,13 +53,13 @@ body{
   background:#000080;
 }*/
 
-.annolet-elements{
+/*.annolet-elements{
   float:left; 
   color: white !important;
   text-align: center;
   text-decoration: none;
   background:#000080 !important;
-}
+}*/
 
 
 
@@ -68,14 +68,15 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    /*background:#000080 !important;*/
 }
 
-/*li {
+annolet-element {
     float: left;
+    color: white;
 }
 
-li a, .dropbtn {
+/*li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
