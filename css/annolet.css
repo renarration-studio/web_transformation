@@ -71,7 +71,7 @@ body{
     /*background:#000080 !important;*/
 }
 
-annolet-element {
+.annolet-element {
     float: left;
     color: white;
 }
