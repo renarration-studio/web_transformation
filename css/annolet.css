@@ -73,10 +73,9 @@ body{
 
 .annolet-element {
     float: left;
-    color: white;
 }
 
-/*li a, .dropbtn {
+.annolet-element{
     display: inline-block;
     color: white;
     text-align: center;
@@ -84,7 +83,7 @@ body{
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+/*li a:hover, .dropdown:hover .dropbtn {
     background-color: red;
 }
 
