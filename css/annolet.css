@@ -75,5 +75,6 @@ li.dropdown{
 .dropdown:hover .dropdown-content{
     display: block;
     bottom: 100%;
+    position: absolute;
 }
 
