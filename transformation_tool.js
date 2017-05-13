@@ -14,14 +14,21 @@
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     //injecting html code
-    container.innerHTML = "<h4 id='annolet-header'>"+"Page Renarration Experiments...!"+"</h4>"+
-    "<ul id='annolet' class='annolet-menu' >"+"<li id='switch-css' class='annolet-element dropdown'>"+
-    "<a href='javascript:void(0)' class='dropbtn'>Switch CSS</a>"+"<div class='dropdown-content'>"+
-    "<a href='#''>Theme 1</a>"+"<a href='#''>Theme 2</a>"+"<a href='#''>Theme 3</a>"+"</li>"+
-    "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+"<li class='annolet-element' >Modify Content</li>"+
-    "<li class='annolet-element' >WebpageStripper</li>"+"<li id='zappper' class='annolet-element' >Zapper</li>"+
-    "<li id='lang-trans' class='annolet-element' >LanguageTranslate</li>"+
-    "<li id='phonetic-trans' class='annolet-element' >PhoneticsTranslation</li>"+"</ul>";
+    container.innerHTML = "<h4 id='annolet-header'>Page Renarration Experiments...!</h4>"+
+    "<ul id='annolet-menu' >"+
+        "<li id='switch-css' class='annolet-element dropdown'>"+
+            "<a href='javascript:void(0)' class='dropbtn'>Switch CSS</a>"+
+            "<div class='dropdown-content'>"+
+                "<a href='#''>Theme 1</a>"+
+                "<a href='#''>Theme 2</a>"+
+                "<a href='#''>Theme 3</a>"+
+            "</div>"
+        "</li>"+
+    "</ul>"
+    // "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+"<li class='annolet-element' >Modify Content</li>"+
+    // "<li class='annolet-element' >WebpageStripper</li>"+"<li id='zappper' class='annolet-element' >Zapper</li>"+
+    // "<li id='lang-trans' class='annolet-element' >LanguageTranslate</li>"+
+    // "<li id='phonetic-trans' class='annolet-element' >PhoneticsTranslation</li></ul>";
 }());
 
 // //Function to erase the content on a webpage.
