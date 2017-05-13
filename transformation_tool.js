@@ -13,24 +13,39 @@
     linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/31c952f5/css/annolet.css"; 
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
-    //injecting html code
-    container.innerHTML = "<h4 id='annolet-header'>Page Renarration Experiments...!</h4>"+
-    "<ul id='annolet-menu' >"+
-        "<li id='switch-css' class='annolet-element dropdown'>"+
-            "<a class='dropbtn'>Switch CSS</a>"+
+    // //injecting html code
+    // container.innerHTML = "<h4 id='annolet-header'>Page Renarration Experiments...!</h4>"+
+    // "<ul id='annolet-menu' >"+
+    //     "<li id='switch-css' class='annolet-element dropdown'>"+
+    //         "<a class='dropbtn'>Switch CSS</a>"+
+    //         "<div class='dropdown-content'>"+
+    //             "<a>Link 1</a>"+
+    //             "<a>Link 2</a>"+
+    //             "<a>Link 3</a>"+
+    //         "</div>"+
+    //     "</li>"+
+    //     "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
+    //     "<li id='modify-content' class='annolet-element' >Modify Content</li>"+
+    //     "<li id='webpage-stripper' class='annolet-element' >Webpage Stripper</li>"+
+    //     "<li id='zappper' class='annolet-element' >Zapper</li>"+
+    //     "<li id='lang-trans' class='annolet-element' >Language Translate</li>"+
+    //     "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
+    // "</ul>";
+
+
+    container.innerHTML = 
+    "<ul>"+
+        "<li><a href='#home'>Home</a></li>"+
+        "<li><a href='#news'>News</a></li>"+
+        "<li class='dropdown'>"+
+            "<a href='javascript:void(0)' class='dropbtn'>Dropdown</a>"+
             "<div class='dropdown-content'>"+
-                "<a>Link 1</a>"+
-                "<a>Link 2</a>"+
-                "<a>Link 3</a>"+
+                "<a href='#'>Link 1</a>"+
+                "<a href='#'>Link 2</a>"+
+                "<a href='#'>Link 3</a>"+
             "</div>"+
         "</li>"+
-        "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
-        "<li id='modify-content' class='annolet-element' >Modify Content</li>"+
-        "<li id='webpage-stripper' class='annolet-element' >Webpage Stripper</li>"+
-        "<li id='zappper' class='annolet-element' >Zapper</li>"+
-        "<li id='lang-trans' class='annolet-element' >Language Translate</li>"+
-        "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
-    "</ul>";
+    "</ul>"
 }());
 
 // //Function to erase the content on a webpage.
