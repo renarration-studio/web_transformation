@@ -10,7 +10,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/3ef6ea6c/css/annolet.css"; 
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/d8156c9b/css/annolet.css"; 
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     // //injecting html code
@@ -19,13 +19,21 @@
         "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
         "<li id='zapper' class='annolet-element' >Zapper</li>"+
         "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
-        "<li>"+
+        "<li class='annolet-element'>"+
             "<select class='select-menu' >"+
-                "<option value='theme1' id='theme-1' >Switch to theme1</option>"+
-                "<option value='theme2' id='theme-2' >Switch to theme2</option>"+
-                "<option value='theme3' id='theme-3' >Switch to theme3</option>"+
-            "</select>"+"<br><br>"+
-            "<h6 style='color:white;left:5px;'>Switch CSS</h6>"+
+                "<option id='theme-1' >Switch to theme1</option>"+
+                "<option id='theme-2' >Switch to theme2</option>"+
+                "<option id='theme-3' >Switch to theme3</option>"+
+            "</select>"+"<br>"+
+            "<h6 style='color:orange;'>Switch CSS</h6>"+
+        "</li>"+
+        "<li class='annolet-element'>"+
+            "<select class='select-menu' >"+
+                "<option id='show-text' >Show Text</option>"+
+                "<option id='show-links' >Show Links</option>"+
+                "<option id='show-images' >Show Images</option>"+
+            "</select>"+"<br>"+
+            "<h6 style='color:orange;'>Webpage Stripper</h6>"+
         "</li>"+
     "</ul>";
 }());
