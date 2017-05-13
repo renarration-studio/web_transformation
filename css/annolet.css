@@ -28,53 +28,22 @@ body{
     overflow: hidden;
 }
 
-.annolet-element {
-    float: left;
-    cursor: pointer;
-}
-
-.annolet-element, .dropbtn {
+.annolet-element{
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
+    float: left;
+    cursor: pointer;
 }
 
-.annolet-element:hover, .dropdown:hover .dropbtn{
+.annolet-element:hover{
     background-color:  #003366;
     cursor: pointer;
 }
 
-li.dropdown{
-    display: inline-block;
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
 
-.list {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.list:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-    top: 100%;
-    position: absolute;
-}
 
