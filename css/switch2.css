@@ -6,8 +6,8 @@
 
 #annolet-container, #annolet-header, .annolet-elements
 {
-	color: inherit;
-	background: inherit;
+	color: inherit !important;
+	background: inherit !important;
 }
 
 
