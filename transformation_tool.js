@@ -19,9 +19,9 @@
         "<li id='switch-css' class='annolet-element dropdown'>"+
             "<a href='javascript:void(0)' class='dropbtn'>Switch CSS</a>"+
             "<div class='dropdown-content'>"+
-                "<a href='#''>Theme 1</a>"+
-                "<a href='#''>Theme 2</a>"+
-                "<a href='#''>Theme 3</a>"+
+                "<a href='#' class='list'>Theme 1</a>"+
+                "<a href='#' class='list'>Theme 2</a>"+
+                "<a href='#' class='list'>Theme 3</a>"+
             "</div>"
         "</li>"+
     "</ul>"
