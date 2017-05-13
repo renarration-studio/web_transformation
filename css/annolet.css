@@ -47,7 +47,7 @@ body{
     cursor: pointer;
 }
 
-.dropdown{
+li.dropdown{
     display: inline-block;
 }
 
