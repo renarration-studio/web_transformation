@@ -10,7 +10,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/2e5f8eb5/css/annolet.css"; 
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/d531fdfd/css/annolet.css"; 
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     // //injecting html code
@@ -20,9 +20,9 @@
         "<li id='zapper' class='annolet-element' >Zapper</li>"+
         "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
         "<select class='select-menu' >"+
-            "<option value='theme1'>Switch to theme1</option>"+
-            "<option value='theme2'>Switch to theme2</option>"+
-            "<option value='theme3'>Switch to theme3</option>"+
+            "<option value='theme1' id='theme-1' >Switch to theme1</option>"+
+            "<option value='theme2' id='theme-2' >Switch to theme2</option>"+
+            "<option value='theme3' id='theme-3' >Switch to theme3</option>"+
         "</select>"+
     "</ul>";
 }());
@@ -55,6 +55,40 @@ function disableCss(){
    }
 }
 
+(function alternateStylesheets(){
+    //appending a CSS alternate stylesheets to head element of a webpage.
+    var i= 0;
+    var style_sheets = 3; 
+    var css_themes =['https://cdn.rawgit.com/renarration-studio/webpage-transformation/95f11312/css/switch1.css',
+    'https://cdn.rawgit.com/renarration-studio/webpage-transformation/95f11312/css/switch2.css',
+    'https://cdn.rawgit.com/renarration-studio/webpage-transformation/95f11312/css/switch3.css'];
+    var link_title =['switch1', 'switch2', 'switch3'];
+
+    for(i=0; i<style_sheets; i++){
+        var linktag = document.createElement('link');
+        linktag.rel  = 'alternate stylesheet';
+        linktag.type = 'text/css';
+        linktag.href = css_themes[i];
+        linktag.title= link_title[i];
+        head  = document.getElementsByTagName('head')[0];
+        head.appendChild(linktag);
+    }
+}());
+
+function switchStyle(css_title)
+{   
+   var i;
+   var linktag = document.getElementsByTagName("link");
+   for (i = 0; i < linktag.length; i++ ) {
+    if ((linktag[i].rel.indexOf( "stylesheet" ) != -1) &&linktag[i].title) {
+        linktag[i].disabled = true ;
+        if (linktag[i].title == css_title) {
+        linktag[i].disabled = false ;
+         }
+    }
+   }
+}
+
 // Function to add click events to the elements.
 (function addClickevents(){
     document.getElementById('zapper').addEventListener('click', function() {
@@ -62,6 +96,15 @@ function disableCss(){
     }, false);
     document.getElementById('disable-css').addEventListener('click', function() {
         disableCss()
+    }, false);
+    document.getElementById('theme-1').addEventListener('click', function() {
+        switchStyle('switch1')
+    }, false);
+    document.getElementById('theme-2').addEventListener('click', function() {
+        switchStyle('switch2')
+    }, false);
+    document.getElementById('theme-3').addEventListener('click', function() {
+        switchStyle('switch3')
     }, false);
 }());
 
