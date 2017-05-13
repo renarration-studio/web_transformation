@@ -47,7 +47,7 @@ body{
     cursor: pointer;
 }
 
-li.dropdown{
+.dropdown{
     display: inline-block;
 }
 
@@ -74,5 +74,6 @@ li.dropdown{
 
 .dropdown:hover .dropdown-content{
     display: block;
+    bottom: 100%;
 }
 
