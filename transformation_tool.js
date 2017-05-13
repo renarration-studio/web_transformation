@@ -10,7 +10,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/9cee463b/css/annolet.css"; 
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/f12196bf/css/annolet.css"; 
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     // //injecting html code
@@ -19,12 +19,19 @@
         "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
         "<li id='zapper' class='annolet-element' >Zapper</li>"+
         "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
-        "<select>"+
-            "<option value='volvo'>Volvo</option>"+
-            "<option value='saab'>Saab</option>"+
-            "<option value='mercedes'>Mercedes</option>"+
-            "<option value='audi'>Audi</option>"+
-        "</select>"+
+        // "<select class='select-menu' >"+
+        //     "<option value='volvo'>Switch Theme1</option>"+
+        //     "<option value='saab'>Switch Theme2</option>"+
+        //     "<option value='mercedes'>Switch Theme3</option>"+
+        // "</select>"+
+        "<li class='dropdown'>"+
+            "<a href='javascript:void(0)' class='dropbtn'>Dropdown</a>"+
+            "<div class='dropdown-content'>"+
+                "<a href='#'>Link 1</a>"+
+                "<a href='#'>Link 2</a>"+
+                "<a href='#'>Link 3</a>"+
+            "</div>"+
+        "</li>"+
     "</ul>";
 }());
 
