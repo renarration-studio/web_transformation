@@ -10,35 +10,39 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/68ca1123/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/96bac852/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     //injecting html code
-    container.innerHTML = "<h3 id='annolet-header'>"+"Annolet...!"+"</h3>"+"<ul id='annolet' class='annolet-menu' >"+"<li id='Zapper' class='annolet-element'>Zapper</li>"+"<li id='disable-css' class='annolet-element'>DisableCss</li>"+
-    "<li class='annolet-element' >Modify Content</li>"+"<li class='annolet-element' >WebpageStripper</li>"+"<li class='annolet-element' >SwitchTheme</li>"+"<li class='annolet-element' >LanguageTranslate</li>"+"<li class='annolet-element' >PhoneticsTranslation</li>"+"</ul>";
+    container.innerHTML = "<h4 id='annolet-header'>"+"Page Renarration Experiments...!"+"</h4>"+
+    "<ul id='annolet' class='annolet-menu' >"+"<li id='switch-css' class='annolet-element'>Switch CSS</li>"+
+    "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+"<li class='annolet-element' >Modify Content</li>"+
+    "<li class='annolet-element' >WebpageStripper</li>"+"<li id='zappper' class='annolet-element' >Zapper</li>"+
+    "<li id='lang-trans' class='annolet-element' >LanguageTranslate</li>"+
+    "<li id='phonetic-trans' class='annolet-element' >PhoneticsTranslation</li>"+"</ul>";
 }());
 
-//Function to erase the content on a webpage.
-function  Zapper(){
-    alert("Zap out the content by clicking anywhere on the document");
-    // Disable all links
-    var anchors = document.getElementsByTagName("a");
-    for (var i = 0; i < anchors.length; i++) {
-        anchors[i].onclick = function() {return(false);};
-    }
-    $("body").click(function(event){
-          console.log(event.target);
-          targetElem= event.target;
-          targetElem.style.visibility="hidden";
-    }); 
-}
+// //Function to erase the content on a webpage.
+// function  Zapper(){
+//     alert("Zap out the content by clicking anywhere on the document");
+//     // Disable all links
+//     var anchors = document.getElementsByTagName("a");
+//     for (var i = 0; i < anchors.length; i++) {
+//         anchors[i].onclick = function() {return(false);};
+//     }
+//     $("body").click(function(event){
+//           console.log(event.target);
+//           targetElem= event.target;
+//           targetElem.style.visibility="hidden";
+//     }); 
+// }
 
-// Function to add click events to the elements.
-(function addClickevents(){
-    document.getElementById('Zapper').addEventListener('click', function() {
-        Zapper()
-    }, false);
-}());
+// // Function to add click events to the elements.
+// (function addClickevents(){
+//     document.getElementById('Zapper').addEventListener('click', function() {
+//         Zapper()
+//     }, false);
+// }());
 
 // (function createElements(){
 //     // Creates dropdown box and appended into the annolet container div for switching the themes of a webpage. 

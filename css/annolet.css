@@ -73,6 +73,7 @@ body{
 
 .annolet-element {
     float: left;
+    cursor: pointer;
 }
 
 .annolet-element{
@@ -85,7 +86,8 @@ body{
 }
 
 .annolet-element:hover{
-    background-color: darkblue;
+    background-color: #000034;
+    cursor: pointer;
 }
 
 /*li.dropdown {
