@@ -17,7 +17,7 @@
     container.innerHTML = "<h4 id='annolet-header'>Page Renarration Experiments...!</h4>"+
     "<ul id='annolet-menu' >"+
         "<li id='switch-css' class='annolet-element dropdown'>"+
-            "<a href='javascript:void(0)' class='dropbtn'>Dropdown</a>"+
+            "<a class='dropbtn'>Switch CSS</a>"+
         "</li>"+
         "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
         "<li id='modify-content' class='annolet-element' >Modify Content</li>"+
