@@ -44,7 +44,7 @@ body{
     cursor: pointer;
 }
 
-/*.select-menu:hover{
+.select-menu:hover{
     background-color:  #003366;
     color: white;
     cursor: pointer;
@@ -59,12 +59,12 @@ body{
     font-weight: bold;
     float: left;
     cursor: pointer;
-}*/
-
-.select-menu {
-  position:absolute;
-  z-index: 9999;
+    position:absolute;
+    z-index: 9999;
+    color: black;
 }
+
+
 
 
 
