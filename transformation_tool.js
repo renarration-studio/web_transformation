@@ -10,23 +10,23 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/280a3fcb/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/63eb0a20/css/annolet.css"; //random version number removed bcoz some browser take it as text file and not as CSS.
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     //injecting html code
     container.innerHTML = "<h4 id='annolet-header'>Page Renarration Experiments...!</h4>"+
     "<ul id='annolet-menu' >"+
-        "<li id='switch-css' class='annolet-element dropdown'>"+
-            "<a href='javascript:void(0)' class='dropbtn'>Switch CSS</a>"+
-            "<div class='dropdown-content'>"+
-                "<a href='#' class='list'>Theme 1</a>"+
-                "<a href='#' class='list'>Theme 2</a>"+
-                "<a href='#' class='list'>Theme 3</a>"+
-            "</div>"+
-        "</li>"+
+        // "<li id='switch-css' class='annolet-element dropdown'>"+
+        //     "<a href='javascript:void(0)' class='dropbtn'>Switch CSS</a>"+
+        //     "<div class='dropdown-content'>"+
+        //         "<a href='#' class='list'>Theme 1</a>"+
+        //         "<a href='#' class='list'>Theme 2</a>"+
+        //         "<a href='#' class='list'>Theme 3</a>"+
+        //     "</div>"+
+        // "</li>"+
     "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
-    "<li class='annolet-element' >Modify Content</li>"+
-    "<li class='annolet-element' >Webpage Stripper</li>"+
+    "<li id='modify-content' class='annolet-element' >Modify Content</li>"+
+    "<li id='webpage-stripper' class='annolet-element' >Webpage Stripper</li>"+
     "<li id='zappper' class='annolet-element' >Zapper</li>"+
     "<li id='lang-trans' class='annolet-element' >Language Translate</li>"+
     "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
