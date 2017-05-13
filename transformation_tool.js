@@ -16,20 +16,13 @@
     //injecting html code
     container.innerHTML = "<h4 id='annolet-header'>Page Renarration Experiments...!</h4>"+
     "<ul id='annolet-menu' >"+
-        // "<li id='switch-css' class='annolet-element dropdown'>"+
-        //     "<a href='javascript:void(0)' class='dropbtn'>Switch CSS</a>"+
-        //     "<div class='dropdown-content'>"+
-        //         "<a href='#' class='list'>Theme 1</a>"+
-        //         "<a href='#' class='list'>Theme 2</a>"+
-        //         "<a href='#' class='list'>Theme 3</a>"+
-        //     "</div>"+
-        // "</li>"+
-    "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
-    "<li id='modify-content' class='annolet-element' >Modify Content</li>"+
-    "<li id='webpage-stripper' class='annolet-element' >Webpage Stripper</li>"+
-    "<li id='zappper' class='annolet-element' >Zapper</li>"+
-    "<li id='lang-trans' class='annolet-element' >Language Translate</li>"+
-    "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
+        "<li id='switch-css' class='annolet-element'>Switch CSS</li>"
+        "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
+        "<li id='modify-content' class='annolet-element' >Modify Content</li>"+
+        "<li id='webpage-stripper' class='annolet-element' >Webpage Stripper</li>"+
+        "<li id='zappper' class='annolet-element' >Zapper</li>"+
+        "<li id='lang-trans' class='annolet-element' >Language Translate</li>"+
+        "<li id='phonetic-trans' class='annolet-element' >Phonetics Translation</li>"+
     "</ul>";
 }());
 
