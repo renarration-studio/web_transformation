@@ -76,7 +76,7 @@ body{
     cursor: pointer;
 }
 
-.annolet-element{
+.annolet-element a, .dropbtn{
     display: inline-block;
     color: white;
     text-align: center;
@@ -85,12 +85,12 @@ body{
     font-weight: bold;
 }
 
-.annolet-element:hover{
+.annolet-element:hover, .dropdown:hover .dropbtn{
     background-color:  #003366;
     cursor: pointer;
 }
 
-/*li.dropdown {
+.annolet-element.dropdown {
     display: inline-block;
 }
 
@@ -115,4 +115,4 @@ body{
 
 .dropdown:hover .dropdown-content {
     display: block;
-}*/
+}
