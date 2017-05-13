@@ -10,7 +10,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/ea86db5f/css/annolet.css"; 
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/2e5f8eb5/css/annolet.css"; 
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     // //injecting html code
