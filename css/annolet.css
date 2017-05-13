@@ -93,7 +93,7 @@ li.dropdown{
     display: inline-block;
 }
 
-/*.dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -102,7 +102,7 @@ li.dropdown{
     z-index: 1;
 }
 
-.dropdown-content .list {
+.list {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -110,10 +110,10 @@ li.dropdown{
     text-align: left;
 }
 
-.dropdown-content .list:hover {
+.list:hover {
   background-color: #f1f1f1;
-}*/
+}
 
-.dropdown:hover{
+.dropdown:hover .dropdown-content{
     display: block;
 }

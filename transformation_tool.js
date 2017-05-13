@@ -10,7 +10,7 @@
     linktag.rel = "stylesheet";
     linktag.type = "text/css";
     //using rawgit.com MaxCDN.. files directly linked to git repo 'webpage-transformation/master'
-    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/ef7dcca2/css/annolet.css"; 
+    linktag.href = "https://cdn.rawgit.com/renarration-studio/webpage-transformation-tool/31c952f5/css/annolet.css"; 
     document.getElementsByTagName('head')[0].appendChild(linktag);
     
     //injecting html code
@@ -18,6 +18,11 @@
     "<ul id='annolet-menu' >"+
         "<li id='switch-css' class='annolet-element dropdown'>"+
             "<a class='dropbtn'>Switch CSS</a>"+
+            "<div class='dropdown-content'>"+
+                "<a>Link 1</a>"+
+                "<a>Link 2</a>"+
+                "<a>Link 3</a>"+
+            "</div>"+
         "</li>"+
         "<li id='disable-css' class='annolet-element'>Disable CSS</li>"+
         "<li id='modify-content' class='annolet-element' >Modify Content</li>"+
