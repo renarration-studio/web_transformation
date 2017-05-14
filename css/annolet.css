@@ -40,12 +40,12 @@ body{
 }
 
 .annolet-element:hover{
-    background-color:  #162252;
+    background-color:  #302B54;
     cursor: pointer;
 }
 
 .select-menu:hover{
-    background-color:  #003366;
+    background-color:  #302B54;
     color: white;
     cursor: pointer;
 }
